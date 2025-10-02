@@ -1,0 +1,20 @@
+meta {
+  name: ExceptionTest
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8082/feedback
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "uid": "123",
+    "operationUid": "test-op",
+    "systemTime": "2025-10-02T16:23:11.112Z",
+    "communicationId": 100
+  }
+}

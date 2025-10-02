@@ -1,0 +1,20 @@
+meta {
+  name: ValidateOpUIDLength
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8082/feedback
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "uid": "test-uid",
+    "operationUid": "very-very-very-very-very-very-very-very-long-op-uid",
+    "systemTime": "2025-10-02T16:23:11.112Z",
+    "communicationId": 100
+  }
+}
