@@ -1,6 +1,5 @@
 package ru.kuznetsovmd.MySecondTestAppSpringBoot.model;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.Builder;
 
